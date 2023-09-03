@@ -1,0 +1,7 @@
+// MARK: - CommentView
+"comment_view_nav_bar_title" = "Yorumlar";
+"comment_view_name_prefix" = "İsim: ";
+"comment_view_email_prefix" = "Email: ";
+
+// MARK: - CommentDetailView
+"comment_detail_view_nav_bar_title" = "Yorum";

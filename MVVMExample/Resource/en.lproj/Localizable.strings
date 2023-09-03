@@ -1,0 +1,7 @@
+// MARK: - CommentView
+"comment_view_nav_bar_title" = "Comments";
+"comment_view_name_prefix" = "Name: ";
+"comment_view_email_prefix" = "Email: ";
+
+// MARK: - CommentDetailView
+"comment_detail_view_nav_bar_title" = "Comment";
