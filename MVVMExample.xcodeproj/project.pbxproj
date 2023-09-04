@@ -11,7 +11,7 @@
 		9265D9132AA4C7340035B40F /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265D9122AA4C7340035B40F /* SplashView.swift */; };
 		9265D9152AA4C7350035B40F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9265D9142AA4C7350035B40F /* Assets.xcassets */; };
 		9265D9192AA4C7350035B40F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9265D9182AA4C7350035B40F /* Preview Assets.xcassets */; };
-		9265D9232AA4C7350035B40F /* MVVMExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265D9222AA4C7350035B40F /* MVVMExampleTests.swift */; };
+		9265D9232AA4C7350035B40F /* CommentViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265D9222AA4C7350035B40F /* CommentViewModelTests.swift */; };
 		9265D92D2AA4C7350035B40F /* MVVMExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265D92C2AA4C7350035B40F /* MVVMExampleUITests.swift */; };
 		9265D92F2AA4C7350035B40F /* MVVMExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265D92E2AA4C7350035B40F /* MVVMExampleUITestsLaunchTests.swift */; };
 		9265D9412AA4C9C10035B40F /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265D9402AA4C9C10035B40F /* CommentView.swift */; };
@@ -42,6 +42,11 @@
 		9265D9822AA4D5680035B40F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9265D9842AA4D5680035B40F /* Localizable.strings */; };
 		9265D9882AA4D5A70035B40F /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265D9872AA4D5A70035B40F /* StringExtensions.swift */; };
 		9265D9892AA4D5A70035B40F /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265D9872AA4D5A70035B40F /* StringExtensions.swift */; };
+		9265D98D2AA5A0430035B40F /* MockCommentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265D98C2AA5A0430035B40F /* MockCommentProvider.swift */; };
+		9265D9902AA5A10A0035B40F /* NetworkServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265D98F2AA5A10A0035B40F /* NetworkServiceProvider.swift */; };
+		9265D9912AA5A10A0035B40F /* NetworkServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265D98F2AA5A10A0035B40F /* NetworkServiceProvider.swift */; };
+		9265D9932AA5A1980035B40F /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265D9922AA5A1980035B40F /* MockNetworkService.swift */; };
+		9265D9962AA5A26A0035B40F /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265D9952AA5A26A0035B40F /* MockURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +74,7 @@
 		9265D9162AA4C7350035B40F /* MVVMExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MVVMExample.entitlements; sourceTree = "<group>"; };
 		9265D9182AA4C7350035B40F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9265D91E2AA4C7350035B40F /* MVVMExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9265D9222AA4C7350035B40F /* MVVMExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMExampleTests.swift; sourceTree = "<group>"; };
+		9265D9222AA4C7350035B40F /* CommentViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModelTests.swift; sourceTree = "<group>"; };
 		9265D9282AA4C7350035B40F /* MVVMExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9265D92C2AA4C7350035B40F /* MVVMExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMExampleUITests.swift; sourceTree = "<group>"; };
 		9265D92E2AA4C7350035B40F /* MVVMExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -88,6 +93,10 @@
 		9265D9832AA4D5680035B40F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9265D9852AA4D56C0035B40F /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9265D9872AA4D5A70035B40F /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		9265D98C2AA5A0430035B40F /* MockCommentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCommentProvider.swift; sourceTree = "<group>"; };
+		9265D98F2AA5A10A0035B40F /* NetworkServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProvider.swift; sourceTree = "<group>"; };
+		9265D9922AA5A1980035B40F /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		9265D9952AA5A26A0035B40F /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +180,8 @@
 		9265D9212AA4C7350035B40F /* MVVMExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				9265D9222AA4C7350035B40F /* MVVMExampleTests.swift */,
+				9265D9942AA5A25A0035B40F /* Mock */,
+				9265D98A2AA59FB90035B40F /* ViewModel */,
 			);
 			path = MVVMExampleTests;
 			sourceTree = "<group>";
@@ -259,6 +269,7 @@
 			children = (
 				9265D94E2AA4CDDB0035B40F /* NetworkError.swift */,
 				9265D94F2AA4CDDB0035B40F /* NetworkService.swift */,
+				9265D98E2AA5A0970035B40F /* Protocol */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -343,6 +354,32 @@
 				9265D9872AA4D5A70035B40F /* StringExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9265D98A2AA59FB90035B40F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9265D9222AA4C7350035B40F /* CommentViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9265D98E2AA5A0970035B40F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9265D98F2AA5A10A0035B40F /* NetworkServiceProvider.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9265D9942AA5A25A0035B40F /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				9265D98C2AA5A0430035B40F /* MockCommentProvider.swift */,
+				9265D9922AA5A1980035B40F /* MockNetworkService.swift */,
+				9265D9952AA5A26A0035B40F /* MockURLProtocol.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -510,6 +547,7 @@
 				9265D9732AA4D00E0035B40F /* CommentRepository.swift in Sources */,
 				9265D9782AA4D0EC0035B40F /* CommentFetcher.swift in Sources */,
 				9265D97C2AA4D51A0035B40F /* CommentDetailView.swift in Sources */,
+				9265D9902AA5A10A0035B40F /* NetworkServiceProvider.swift in Sources */,
 				9265D9522AA4CDDB0035B40F /* NetworkService.swift in Sources */,
 				9265D9412AA4C9C10035B40F /* CommentView.swift in Sources */,
 				9265D9132AA4C7340035B40F /* SplashView.swift in Sources */,
@@ -525,7 +563,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9265D9232AA4C7350035B40F /* MVVMExampleTests.swift in Sources */,
+				9265D98D2AA5A0430035B40F /* MockCommentProvider.swift in Sources */,
+				9265D9932AA5A1980035B40F /* MockNetworkService.swift in Sources */,
+				9265D9232AA4C7350035B40F /* CommentViewModelTests.swift in Sources */,
+				9265D9962AA5A26A0035B40F /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +588,7 @@
 				9265D9742AA4D00E0035B40F /* CommentRepository.swift in Sources */,
 				9265D9792AA4D0EC0035B40F /* CommentFetcher.swift in Sources */,
 				9265D97D2AA4D51A0035B40F /* CommentDetailView.swift in Sources */,
+				9265D9912AA5A10A0035B40F /* NetworkServiceProvider.swift in Sources */,
 				9265D9582AA4CEC60035B40F /* NetworkService.swift in Sources */,
 				9265D95A2AA4CEC60035B40F /* CommentView.swift in Sources */,
 				9265D95B2AA4CEC60035B40F /* SplashView.swift in Sources */,

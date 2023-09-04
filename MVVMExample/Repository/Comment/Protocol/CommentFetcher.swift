@@ -8,6 +8,6 @@
 import Foundation
 
 protocol CommentFetcher {
-    var network: NetworkService { get }    
+    var network: NetworkServiceProvider { get }
     func fetchComments() async throws -> [Comment]
 }

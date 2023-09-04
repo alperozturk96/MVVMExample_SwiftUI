@@ -19,16 +19,14 @@ final class CommentViewModel: ObservableObject {
     // MARK: - Published Variables
     @Published var comments = [Comment]()
     
-    func fetchComments() {
-        Task {
-            do {
-                let result = try await repository.fetchComments()
-                await MainActor.run {
-                    comments = result
-                }
-            } catch {
-                print("Error caught at fetchComments: \(error.localizedDescription)")
+    func fetchComments() async {
+        do {
+            let result = try await repository.fetchComments()
+            await MainActor.run {
+                comments = result
             }
+        } catch {
+            print("Error caught at fetchComments: \(error.localizedDescription)")
         }
     }
 }

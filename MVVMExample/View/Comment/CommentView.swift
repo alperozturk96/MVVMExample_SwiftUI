@@ -29,7 +29,7 @@ struct CommentView: View {
             .navigationTitle("comment_view_nav_bar_title".localized)
             .navigationBarBackButtonHidden()
             .task {
-                viewModel.fetchComments()
+                await viewModel.fetchComments()
             }
         }
     }

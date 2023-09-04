@@ -9,11 +9,11 @@ import Foundation
 
 struct Comment: Codable, Identifiable {
     var uuid = UUID()
-    let postID, id: Int
+    let postId, id: Int
     let name, email, body: String
 
     enum CodingKeys: String, CodingKey {
-        case postID = "postId"
+        case postId = "postId"
         case id, name, email, body
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 struct CommentRepository: CommentFetcher {
-    var network: NetworkService { NetworkService() }
+    var network: NetworkServiceProvider { NetworkService() }
     
     func fetchComments() async throws -> [Comment] {
         return try await network.fetch(type: [Comment].self, endpoint: "comments")
