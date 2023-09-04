@@ -34,8 +34,10 @@ struct CommentDetailView: View {
     }
 }
 
+// MARK: - Preview
 struct CommentDetailView_Previews: PreviewProvider {
     static var previews: some View {
         CommentDetailView(comment: .init(postId: 1, id: 1, name: "Alper", email: "test@gmail.com", body: "This is a test message for SwiftUI Preview"))
+            .preferredColorScheme(.dark)
     }
 }

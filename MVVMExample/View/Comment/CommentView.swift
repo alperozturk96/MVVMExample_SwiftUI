@@ -51,8 +51,10 @@ extension CommentView {
     }
 }
 
+// MARK: - Preview
 struct CommentView_Previews: PreviewProvider {
     static var previews: some View {
         CommentView()
+            .preferredColorScheme(.dark)
     }
 }
