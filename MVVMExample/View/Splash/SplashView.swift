@@ -10,7 +10,7 @@ import SwiftUI
 struct SplashView: View {
     
     // MARK: - State Object
-    @StateObject private var viewModel = SplashViewModel()
+    @StateObject private var viewModel: SplashViewModel
     
     init(viewModel: SplashViewModel = SplashViewModel()) {
         _viewModel = StateObject(wrappedValue: viewModel)

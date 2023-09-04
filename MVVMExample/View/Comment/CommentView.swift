@@ -10,7 +10,7 @@ import SwiftUI
 struct CommentView: View {
     
     // MARK: - State Object
-    @StateObject private var viewModel = CommentViewModel()
+    @StateObject private var viewModel: CommentViewModel
     
     init(viewModel: CommentViewModel = CommentViewModel()) {
         _viewModel = StateObject(wrappedValue: viewModel)
